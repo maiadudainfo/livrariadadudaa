@@ -1,5 +1,6 @@
 from rest_framework.viewsets import ModelViewSet
-from core.serializers import CategoriaSerializer, EditoraSerializer, LivroSerializer, LivroDetailSerializer, AutorSerializer
+from core.models import Autor
+from core.serializers import AutorSerializer
 
 class AutorViewSet(ModelViewSet):
     queryset = Autor.objects.all()

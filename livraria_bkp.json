@@ -1,23 +1,149 @@
 [
 {
+  "model": "core.autor",
+  "pk": 1,
+  "fields": {
+    "nome": "Robert C. Martin",
+    "email": "unclebob@altabooks.com.br"
+  }
+},
+{
+  "model": "core.categoria",
+  "pk": 1,
+  "fields": {
+    "descricao": "Engenharia de Software"
+  }
+},
+{
+  "model": "core.categoria",
+  "pk": 2,
+  "fields": {
+    "descricao": "Auto ajuda"
+  }
+},
+{
+  "model": "core.editora",
+  "pk": 1,
+  "fields": {
+    "nome": "Alta Books",
+    "site": null
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 1,
+  "fields": {
+    "titulo": "O Código Limpo",
+    "isbn": "794375938457934",
+    "quantidade": 10,
+    "preco": "45.00",
+    "categoria": 1,
+    "editora": 1,
+    "capa": 1,
+    "autores": [
+      1
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 2,
+  "fields": {
+    "titulo": "O Codificador Limpo",
+    "isbn": "14543252365",
+    "quantidade": 4,
+    "preco": "67.00",
+    "categoria": 1,
+    "editora": 1,
+    "capa": 2,
+    "autores": [
+      1
+    ]
+  }
+},
+{
   "model": "core.usuario",
   "pk": 1,
   "fields": {
-    "password": "pbkdf2_sha256$390000$qwvtBbMEzwc1PulaNnvDwi$lIpLxie9EFPui/MQDZXUHPbYO3xqLmxgY3n+HL6kZl8=",
-    "last_login": null,
+    "password": "pbkdf2_sha256$390000$ITvVdeOJvUEncwmplGN73y$dn2NYpOWeqkSMI8MMf6RuFC2E0rUqRUASsknkOK3t4g=",
+    "last_login": "2022-10-03T17:30:39Z",
     "is_superuser": true,
-    "username": "admin",
+    "username": "marcoandre@gmail.com",
+    "first_name": "MARCO ANDRE",
+    "last_name": "MENDES",
+    "email": "marcoandre@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-10-03T17:10:45Z",
+    "cpf": "93682786953",
+    "telefone": "47991675523",
+    "data_nascimento": "1973-10-29",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "core.usuario",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$qA6oWrs5x8r3I8foeoD0LH$Fy2LRl7VerKIcveM2FI5gqLQtfXqHuUbgFgfTUvo1Q0=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "comprador1",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-03T17:32:41Z",
+    "cpf": "09101114999",
+    "telefone": null,
+    "data_nascimento": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "core.usuario",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$KbECfNX6fFVbqWpxJ9Gokv$sO2uFAzgQXo2/E29A+nwISp9k6OKNHot76tZEVpaV7I=",
+    "last_login": "2022-10-13T18:49:02.559Z",
+    "is_superuser": true,
+    "username": "marco",
     "first_name": "",
     "last_name": "",
     "email": "",
     "is_staff": true,
     "is_active": true,
-    "date_joined": "2022-10-17T17:39:03.453Z",
+    "date_joined": "2022-10-10T16:49:19.923Z",
     "cpf": "",
     "telefone": null,
     "data_nascimento": null,
     "groups": [],
     "user_permissions": []
+  }
+},
+{
+  "model": "media.image",
+  "pk": 1,
+  "fields": {
+    "attachment_key": "640ae103-b6fe-43df-aabd-628c75723fb1",
+    "public_id": "dea0912b-4a33-48e0-a510-33519368a792",
+    "file": "images/dea0912b-4a33-48e0-a510-33519368a792.jpg",
+    "description": "",
+    "uploaded_on": "2022-10-03T18:13:21.337Z"
+  }
+},
+{
+  "model": "media.image",
+  "pk": 2,
+  "fields": {
+    "attachment_key": "355bf18a-cdba-4b15-9d78-c1d38d2c3e8e",
+    "public_id": "c8075564-5fef-4a08-9f95-f8d643ba799a",
+    "file": "images/c8075564-5fef-4a08-9f95-f8d643ba799a.jpg",
+    "description": "O Codificador Limpo",
+    "uploaded_on": "2022-10-10T17:19:36.749Z"
   }
 }
 ]

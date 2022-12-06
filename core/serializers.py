@@ -1,12 +1,10 @@
 from dataclasses import fields
-from rest_framework.serializers import ModelSerializer
 
 from rest_framework.serializers import ModelSerializer, SlugRelatedField
 
+from core.models import Autor, Categoria, Editora, Livro
 from media.models import Image
 from media.serializers import ImageSerializer
-
-from core.models import Autor, Categoria, Editora, Livro
 
 
 class AutorSerializer(ModelSerializer):

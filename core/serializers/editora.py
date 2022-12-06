@@ -1,5 +1,7 @@
 from rest_framework.serializers import ModelSerializer
-from core.models import Editora
+
+from core.models import Editora, Livro
+
 
 class EditoraSerializer(ModelSerializer):
     class Meta:

@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt",
     "core",
     "media",
+    "uploader",
 ]
 
 MIDDLEWARE = [

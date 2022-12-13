@@ -1,7 +1,6 @@
 from django.db import models
 
 from core.models import Autor, Categoria, Editora
-from media.models import Image
 from uploader.models import Image
 
 
